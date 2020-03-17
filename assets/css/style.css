@@ -100,11 +100,23 @@
 body {
   background-color: #f7f7fa;
   padding-bottom: 500px;
+  color: #1d252d;
+}
+
+p {
+  line-height: 30px;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
+}
+
+h5 {
+  font-size: 19px;
+  font-weight: normal;
+  color: #8e9aa0;
+  margin-bottom: 8px;
 }
 
 .flex {
@@ -181,33 +193,51 @@ header .lang-switcher {
   margin-top: -110px;
   border-radius: 20px;
 }
-.what-is-maraphone h5 {
-  font-size: 19px;
-  font-weight: normal;
-  color: #8e9aa0;
-  margin-bottom: 8px;
-}
 .what-is-maraphone h2 {
   font-size: 36px;
   margin-bottom: 30px;
   font-weight: 500;
 }
-.what-is-maraphone .features .card {
+.what-is-maraphone .card {
   padding: 20px;
   color: #1d252d;
   flex: 1;
 }
-.what-is-maraphone .features .card img {
+.what-is-maraphone .card img {
   margin-left: 20px;
   margin-bottom: 20px;
 }
-.what-is-maraphone .features .card .title {
+.what-is-maraphone .card .title {
   font-size: 21px;
   font-weight: bold;
   margin-bottom: 12px;
 }
-.what-is-maraphone .features .card p {
+.what-is-maraphone .card p {
   line-height: 30px;
+}
+
+.features {
+  padding: 80px 40px 40px;
+}
+.features .feature {
+  display: flex;
+  padding: 80px 0;
+}
+.features .feature.reverse {
+  flex-direction: row-reverse;
+}
+.features .feature .content {
+  flex: 1;
+  padding: 24px 30px 0;
+}
+.features .feature .content .title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 24px;
+}
+.features .feature img {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
