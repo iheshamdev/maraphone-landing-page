@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>smile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Main-Files" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-266.000000, -1059.000000)" fill="#FF6A39" fill-rule="nonzero">
+            <g id="02_How-it-works" transform="translate(151.000000, 864.000000)">
+                <g id="step-1" transform="translate(95.000000, 195.000000)">
+                    <g id="smile" transform="translate(20.000000, 0.000000)">
+                        <rect id="Rectangle" opacity="0.3" x="0" y="0" width="60" height="60" rx="30"></rect>
+                        <path d="M13.0389642,36.972743 C12.1244954,35.5736108 12.4951571,33.6832429 13.8668602,32.750488 C15.2385634,31.817733 17.0918719,32.1958067 18.0063406,33.594939 C21.4601156,38.8791961 25.5354043,41.3732638 30.4477611,41.3732638 C35.360118,41.3732638 39.4354067,38.8791961 42.8891817,33.594939 C43.8036505,32.1958067 45.6569589,31.817733 47.0286621,32.750488 C48.4003652,33.6832429 48.771027,35.5736108 47.8565581,36.972743 C43.350275,43.8673315 37.4754913,47.4626866 30.4477611,47.4626866 C23.420031,47.4626866 17.5452472,43.8673315 13.0389642,36.972743 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
