@@ -12,7 +12,6 @@
 
 body {
   background-color: #f7f7fa;
-  padding-bottom: 500px;
   color: #1d252d;
 }
 
@@ -51,7 +50,7 @@ h5 {
 
 // main-container
 .main-container {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   margin: auto;
 }
@@ -99,6 +98,18 @@ header {
   .phone-img {
     filter: drop-shadow(17px 15px 11px rgba(0, 0, 0, 0.18));
     height: 100%;
+    animation: movePhoneImg 3.6s ease-out infinite;
+  }
+  @keyframes movePhoneImg {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 }
 
@@ -161,6 +172,7 @@ header {
 // FAQs
 .FAQs {
   text-align: center;
+  padding-bottom: 60px;
   h2 {
     font-size: 60px;
     margin-bottom: 60px;
@@ -180,6 +192,7 @@ header {
       transition: all 0.2s ease-out;
       &.expand {
         .question::after {
+          transition: all 0.4s ease-out;
           transform: scaleX(1);
           background-color: #f3efef;
         }
@@ -187,7 +200,7 @@ header {
           animation: expanding 1s ease forwards 0ms;
         }
         .arrow-icon {
-          transform: rotate(0);
+          transform: translateY(-50%) rotate(0);
         }
       }
       .question {
@@ -195,7 +208,7 @@ header {
         font-size: 18px;
         position: relative;
         cursor: pointer;
-        padding: 24px 30px;
+        padding: 22px 30px;
         &::after {
           content: '';
           position: absolute;
@@ -221,9 +234,9 @@ header {
       }
       .arrow-icon {
         position: absolute;
-        top: 24px;
+        top: 50%;
         right: 24px;
-        transform: rotate(90deg);
+        transform: translateY(-50%) rotate(90deg);
         transition: all 0.2s ease-out;
       }
     }
@@ -241,4 +254,11 @@ header {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+// stc footer
+.stc-footer-component > * {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto !important;
 }
