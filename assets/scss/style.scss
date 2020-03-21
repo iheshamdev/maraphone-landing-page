@@ -59,6 +59,7 @@ h5 {
   max-width: 1200px;
   width: 100%;
   margin: auto;
+  padding: 30px 40px;
 }
 
 // Header
@@ -66,7 +67,6 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 30px 20px 20px;
   width: 100%;
   direction: ltr;
   .lang-switcher {
@@ -83,9 +83,9 @@ header {
 
 // Hero section
 .hero {
-  padding: 130px 30px 30px;
-  height: 1000px;
+  padding: 130px 0 100px;
   background-size: cover;
+  background-position: 100%;
   background-repeat: no-repeat;
   .content {
     padding-top: 120px;
@@ -132,9 +132,8 @@ header {
     font-weight: 500;
   }
   .card {
-    padding: 20px;
+    width: 48%;
     color: #1d252d;
-    flex: 1;
     img {
       margin-left: 20px;
       margin-bottom: 20px;
@@ -155,12 +154,13 @@ header {
   padding: 80px 40px 40px;
   .feature {
     display: flex;
+    justify-content: space-between;
     padding: 80px 0;
     &.reverse {
       flex-direction: row-reverse;
     }
     .content {
-      flex: 1;
+      width: 50%;
       padding: 24px 30px 0;
       .title {
         font-size: 40px;
@@ -170,7 +170,8 @@ header {
       }
     }
     img {
-      flex: 1;
+      max-width: 50%;
+      padding: 0 20px;
     }
   }
 }
@@ -263,4 +264,144 @@ header {
   max-width: 1200px;
   width: 100%;
   margin: auto !important;
+}
+
+// Break points > RESPONSIVE
+@media screen and (max-width: 1070px) {
+  .hero .phone-img {
+    width: 340px;
+  }
+  .main-container {
+    padding: 30px;
+  }
+  .what-is-maraphone {
+    padding: 40px 30px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .hero {
+    padding: 130px 0;
+    .phone-img {
+      width: 270px;
+    }
+  }
+  .what-is-maraphone {
+    margin-top: -150px;
+  }
+}
+// Ipad
+@media screen and (max-width: 800px) {
+  h5 {
+    font-size: 17px;
+  }
+  .hero {
+    padding-top: 70px;
+    .main-container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .content {
+      padding-top: 20px;
+      text-align: center;
+      h1 {
+        font-size: 36px;
+        line-height: 48px;
+      }
+      p {
+        margin: 0 auto 30px;
+      }
+    }
+    .phone-img {
+      width: 240px;
+    }
+  }
+  .what-is-maraphone {
+    h2 {
+      margin-bottom: 0;
+      font-size: 24px;
+    }
+    .flex.justify-between {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0 !important;
+      .card {
+        padding-top: 40px;
+        width: 100%;
+        .title {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+  .features {
+    .feature {
+      flex-direction: column !important;
+      align-items: center;
+      .content {
+        width: 100%;
+        text-align: center;
+        .title {
+          margin-bottom: 14px;
+        }
+      }
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+// Mobile
+@media screen and (max-width: 500px) {
+  .main-container {
+    padding: 20px;
+  }
+  .hero {
+    .content {
+      h1 {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 20px;
+      }
+      p {
+        max-width: 100%;
+        font-size: 17px;
+        color: #f3efef;
+      }
+    }
+  }
+  .what-is-maraphone {
+    margin-top: -110px;
+  }
+  .features {
+    .feature {
+      flex-direction: column !important;
+      align-items: center;
+      .content {
+        width: 100%;
+        text-align: center;
+        .title {
+          margin-bottom: 14px;
+        }
+      }
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .download-app-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      width: 48%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
