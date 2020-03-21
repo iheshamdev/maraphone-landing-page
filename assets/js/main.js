@@ -1,5 +1,7 @@
-let lang = 'en';
-if (window.location.pathname === '/ar/') {
+let lang;
+if (window.location.pathname === '/en/') {
+  lang = 'en';
+} else {
   lang = 'ar';
 }
 const FAQs = {

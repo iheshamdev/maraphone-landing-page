@@ -457,6 +457,7 @@ header .lang-switcher {
   .features .feature .content {
     width: 100%;
     text-align: center;
+    padding: 20px 10px 0;
   }
   .features .feature .content .title {
     margin-bottom: 14px;
