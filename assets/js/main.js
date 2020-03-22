@@ -107,9 +107,9 @@ const FAQsListContainer = document.querySelector('.FAQs-list');
 // Render FAQs list
 function render() {
   FAQsListContainer.innerHTML = FAQs[lang]
-    .map(li => {
+    .map((li, i) => {
       return `
-            <li>
+            <li style="animation-delay: ${i * 0.1 + 0.3}s">
                 <div class="question" onclick="toggleExpandingPanels(event)">
                     <div>${li.question}</div>
                     
@@ -135,8 +135,7 @@ document.addEventListener('scroll', fireAnimations);
 
 function fireAnimations() {
   animatedElements.forEach(el => {
-    if (el.offsetTop + 150 < window.scrollY + window.innerHeight) {
-      console.log(el);
+    if (el.offsetTop + 250 < window.scrollY + window.innerHeight) {
       el.classList.add('animated');
       el.classList.remove('has-animation');
     }

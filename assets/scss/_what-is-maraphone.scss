@@ -20,7 +20,7 @@
       animation-delay: 1s;
     }
     .card {
-      animation: scaleOutCard 0.9s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+      animation: zoomIn 0.9s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
     }
   }
   h5 {
@@ -70,13 +70,6 @@
 @keyframes showTitleAndSubTitle {
   to {
     transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes scaleOutCard {
-  to {
-    transform: scale(1);
     opacity: 1;
   }
 }
