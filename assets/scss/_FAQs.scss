@@ -3,13 +3,32 @@
   text-align: center;
   padding-bottom: 60px;
   &.animated {
-    ul li {
-      animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+    h5 {
+      transform: translateY(60px);
+      opacity: 0;
+      animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+      animation-delay: 0.3s;
     }
+    h2 {
+      font-size: 60px;
+      margin-bottom: 60px;
+      transform: translateY(60px);
+      opacity: 0;
+      animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+    }
+    ul li {
+      animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+    }
+  }
+  h5 {
+    transform: translateY(60px);
+    opacity: 0;
   }
   h2 {
     font-size: 60px;
     margin-bottom: 60px;
+    transform: translateY(60px);
+    opacity: 0;
   }
   ul {
     list-style-type: none;
