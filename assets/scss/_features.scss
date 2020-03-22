@@ -46,12 +46,12 @@
   }
 }
 // Features
-body-en {
+body.en {
   .features .feature .content {
     h5,
     p,
     .title {
-      transform: translateX(-60px);
+      transform: translateX(60px);
     }
   }
 }
