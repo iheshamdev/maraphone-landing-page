@@ -18,12 +18,13 @@
 body {
   background-color: #f7f7fa;
   color: #1d252d;
-}
-body.ar {
   direction: rtl;
 }
-body.ar .FAQs ul li .question .arrow-icon {
-  transform: rotate(90deg);
+body.en {
+  direction: ltr;
+}
+body.en .FAQs ul li .question .arrow-icon {
+  transform: rotate(-90deg);
 }
 
 p {

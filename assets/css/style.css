@@ -98,30 +98,16 @@
   padding-top: 120px;
   color: #fff;
 }
-.hero .content h1,
-.hero .content p,
-.hero .content .download-app-btns a {
-  transform: translateY(40px);
-  opacity: 0;
-}
 .hero .content h1 {
   font-size: 42px;
   font-weight: 500;
   margin-bottom: 30px;
   line-height: 60px;
-  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-  animation-delay: 0.2s;
 }
 .hero .content p {
   font-size: 18px;
   margin-bottom: 40px;
   max-width: 70%;
-  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-  animation-delay: 0.4s;
-}
-.hero .content .download-app-btns a {
-  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-  animation-delay: 0.7s;
 }
 .hero .phone-img {
   filter: drop-shadow(17px 15px 11px rgba(0, 0, 0, 0.18));
@@ -140,57 +126,21 @@
     transform: translateY(0);
   }
 }
-@keyframes fadeIpUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .what-is-maraphone {
   padding: 60px;
   background-color: #ffffff;
   box-shadow: 0px 14px 26px rgba(0, 0, 0, 0.08);
   margin-top: -110px;
   border-radius: 20px;
-  transform: scale(0.8);
-  opacity: 0;
-}
-.what-is-maraphone.animated {
-  animation: zoomIn 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
-}
-.what-is-maraphone.animated h5 {
-  animation: showTitleAndSubTitle 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-  animation-delay: 1s;
-}
-.what-is-maraphone.animated h2 {
-  animation: showTitleAndSubTitle 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-  animation-delay: 0.7s;
-}
-.what-is-maraphone.animated .card {
-  animation: zoomIn 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-}
-.what-is-maraphone h5 {
-  transform: translateX(40px);
-  opacity: 0;
 }
 .what-is-maraphone h2 {
   font-size: 36px;
   margin-bottom: 30px;
   font-weight: 500;
-  transform: translateX(40px);
-  opacity: 0;
 }
 .what-is-maraphone .card {
   width: 48%;
   color: #1d252d;
-  transform: scale(1.2);
-  opacity: 0;
-}
-.what-is-maraphone .card:first-of-type {
-  animation-delay: 1s;
-}
-.what-is-maraphone .card:last-of-type {
-  animation-delay: 1.2s;
 }
 .what-is-maraphone .card img {
   margin: 20px;
@@ -205,18 +155,6 @@
   line-height: 30px;
 }
 
-@keyframes zoomIn {
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes showTitleAndSubTitle {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 .features {
   padding: 80px 40px 40px;
 }
@@ -228,23 +166,18 @@
 .features .feature.reverse {
   flex-direction: row-reverse;
 }
-.features .feature.animated h5 {
+.features .feature.animated h5,
+.features .feature.animated .title,
+.features .feature.animated p {
   animation: showTitleAndSubTitle 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
   animation-delay: 0.1s;
-}
-.features .feature.animated .title {
-  animation: showTitleAndSubTitle 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-  animation-delay: 0.3s;
-}
-.features .feature.animated p {
-  animation: fadeInUp 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-  animation-delay: 0.8s;
 }
 .features .feature .content {
   width: 50%;
   padding: 24px 30px 0;
 }
 .features .feature .content h5,
+.features .feature .content p,
 .features .feature .content .title {
   transform: translateX(60px);
   opacity: 0;
@@ -253,11 +186,7 @@
   font-size: 36px;
   font-weight: 500;
   line-height: 50px;
-  margin-bottom: 24px;
-}
-.features .feature .content p {
-  transform: translateY(30px);
-  opacity: 0;
+  margin-bottom: 20px;
 }
 .features .feature img {
   max-width: 50%;
@@ -270,35 +199,19 @@
     opacity: 1;
   }
 }
-@keyframes fadeInUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+body-en .features .feature .content h5,
+body-en .features .feature .content p,
+body-en .features .feature .content .title {
+  transform: translateX(-60px);
 }
+
 .FAQs {
   text-align: center;
   padding-bottom: 60px;
 }
-.FAQs.animated h5 {
-  animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-  animation-delay: 0.3s;
-}
-.FAQs.animated h2 {
-  animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-}
-.FAQs.animated ul li {
-  animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-}
-.FAQs h5 {
-  transform: translateY(20px);
-  opacity: 0;
-}
 .FAQs h2 {
   font-size: 60px;
   margin-bottom: 60px;
-  transform: translateY(60px);
-  opacity: 0;
 }
 .FAQs ul {
   list-style-type: none;
@@ -313,8 +226,6 @@
   margin-bottom: 22px;
   text-align: start;
   position: relative;
-  transform: translateY(60px);
-  opacity: 0;
 }
 .FAQs ul li.expand .question::after {
   transition: all 0.4s ease-out;
@@ -350,7 +261,7 @@
   transition: all 0.2s ease-out;
 }
 .FAQs ul li .question .arrow-icon {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   transition: all 0.2s ease-out;
 }
 .FAQs ul li .answer {
@@ -370,12 +281,6 @@
     padding-bottom: 20px;
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@keyframes fadeIpUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 @media screen and (max-width: 1070px) {
@@ -525,14 +430,15 @@
 body {
   background-color: #f7f7fa;
   color: #1d252d;
-}
-
-body.ar {
   direction: rtl;
 }
 
-body.ar .FAQs ul li .question .arrow-icon {
-  transform: rotate(90deg);
+body.en {
+  direction: ltr;
+}
+
+body.en .FAQs ul li .question .arrow-icon {
+  transform: rotate(-90deg);
 }
 
 p {
