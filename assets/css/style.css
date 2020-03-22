@@ -88,6 +88,64 @@
   src: url("/assets/fonts/STCForward/STCForward-ExtraBoldItalic.eot");
   src: url("/assets/fonts/STCForward/STCForward-ExtraBoldItalic.woff") format("woff"), url("/assets/fonts/STCForward/STCForward-ExtraBoldItalic.ttf") format("truetype"), url("/assets/fonts/STCForward/STCForward-ExtraBoldItalic.svg") format("svg");
 }
+.hero {
+  padding: 130px 0 100px;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+.hero .content {
+  padding-top: 120px;
+  color: #fff;
+}
+.hero .content h1,
+.hero .content p,
+.hero .content .download-app-btns a {
+  transform: translateY(40px);
+  opacity: 0;
+}
+.hero .content h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 60px;
+  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+  animation-delay: 0.2s;
+}
+.hero .content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 70%;
+  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+  animation-delay: 0.4s;
+}
+.hero .content .download-app-btns a {
+  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+  animation-delay: 0.7s;
+}
+.hero .phone-img {
+  filter: drop-shadow(17px 15px 11px rgba(0, 0, 0, 0.18));
+  height: 100%;
+  animation: movePhoneImg 3.6s ease-out infinite;
+}
+
+@keyframes movePhoneImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIpUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .what-is-maraphone {
   padding: 60px;
   background-color: #ffffff;
@@ -98,18 +156,18 @@
   opacity: 0;
 }
 .what-is-maraphone.animated {
-  animation: zoomIn 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+  animation: zoomIn 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
 }
 .what-is-maraphone.animated h5 {
-  animation: showTitleAndSubTitle 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-  animation-delay: 1.5s;
-}
-.what-is-maraphone.animated h2 {
-  animation: showTitleAndSubTitle 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation: showTitleAndSubTitle 0.3s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
   animation-delay: 1s;
 }
+.what-is-maraphone.animated h2 {
+  animation: showTitleAndSubTitle 0.3s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.7s;
+}
 .what-is-maraphone.animated .card {
-  animation: zoomIn 0.9s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+  animation: zoomIn 0.6s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
 }
 .what-is-maraphone h5 {
   transform: translateX(40px);
@@ -159,6 +217,65 @@
     opacity: 1;
   }
 }
+.features {
+  padding: 80px 40px 40px;
+}
+.features .feature {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.features .feature.reverse {
+  flex-direction: row-reverse;
+}
+.features .feature.animated h5 {
+  animation: showTitleAndSubTitle 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.4s;
+}
+.features .feature.animated .title {
+  animation: showTitleAndSubTitle 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.2s;
+}
+.features .feature.animated p {
+  animation: fadeInUp 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.5s;
+}
+.features .feature .content {
+  width: 50%;
+  padding: 24px 30px 0;
+}
+.features .feature .content h5,
+.features .feature .content .title {
+  transform: translateX(40px);
+  opacity: 0;
+}
+.features .feature .content .title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 24px;
+}
+.features .feature .content p {
+  transform: translateY(30px);
+  opacity: 0;
+}
+.features .feature img {
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+@keyframes showTitleAndSubTitle {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .FAQs {
   text-align: center;
   padding-bottom: 60px;
@@ -174,7 +291,7 @@
   animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
 }
 .FAQs h5 {
-  transform: translateY(60px);
+  transform: translateY(20px);
   opacity: 0;
 }
 .FAQs h2 {
@@ -396,63 +513,6 @@
     width: 100%;
   }
 }
-.hero {
-  padding: 130px 0 100px;
-  background-size: cover;
-  background-position: 100%;
-  background-repeat: no-repeat;
-}
-.hero .content {
-  padding-top: 120px;
-  color: #fff;
-}
-.hero .content h1,
-.hero .content p,
-.hero .content .download-app-btns a {
-  transform: translateY(40px);
-  opacity: 0;
-}
-.hero .content h1 {
-  font-size: 42px;
-  font-weight: 500;
-  margin-bottom: 30px;
-  line-height: 60px;
-  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-}
-.hero .content p {
-  font-size: 18px;
-  margin-bottom: 40px;
-  max-width: 70%;
-  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-  animation-delay: 0.4s;
-}
-.hero .content .download-app-btns a {
-  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-  animation-delay: 1s;
-}
-.hero .phone-img {
-  filter: drop-shadow(17px 15px 11px rgba(0, 0, 0, 0.18));
-  height: 100%;
-  animation: movePhoneImg 3.6s ease-out infinite;
-}
-
-@keyframes movePhoneImg {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes fadeIpUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -531,32 +591,6 @@ header .lang-switcher {
   color: #fff;
   margin-right: 24px;
   margin-top: -2px;
-}
-
-.features {
-  padding: 80px 40px 40px;
-}
-.features .feature {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 0;
-}
-.features .feature.reverse {
-  flex-direction: row-reverse;
-}
-.features .feature .content {
-  width: 50%;
-  padding: 24px 30px 0;
-}
-.features .feature .content .title {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 50px;
-  margin-bottom: 24px;
-}
-.features .feature img {
-  max-width: 50%;
-  padding: 0 20px;
 }
 
 .stc-footer-component > * {

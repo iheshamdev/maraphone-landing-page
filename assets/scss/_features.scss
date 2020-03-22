@@ -1,0 +1,65 @@
+// Features
+.features {
+  padding: 80px 40px 40px;
+  .feature {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+    &.animated {
+      h5 {
+        animation: showTitleAndSubTitle 0.4s cubic-bezier(0.22, 0.61, 0.36, 1)
+          forwards;
+        animation-delay: 0.4s;
+      }
+      .title {
+        animation: showTitleAndSubTitle 0.7s cubic-bezier(0.22, 0.61, 0.36, 1)
+          forwards;
+        animation-delay: 0.2s;
+      }
+      p {
+        animation: fadeInUp 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+        animation-delay: 0.5s;
+      }
+    }
+    .content {
+      width: 50%;
+      padding: 24px 30px 0;
+      h5,
+      .title {
+        transform: translateX(40px);
+        opacity: 0;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 50px;
+        margin-bottom: 24px;
+      }
+      p {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+    }
+    img {
+      max-width: 50%;
+      padding: 0 20px;
+    }
+  }
+}
+
+@keyframes showTitleAndSubTitle {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

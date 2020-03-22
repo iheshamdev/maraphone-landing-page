@@ -135,7 +135,7 @@ document.addEventListener('scroll', fireAnimations);
 
 function fireAnimations() {
   animatedElements.forEach(el => {
-    if (el.offsetTop + 250 < window.scrollY + window.innerHeight) {
+    if (el.offsetTop + 100 < window.scrollY + window.innerHeight) {
       el.classList.add('animated');
       el.classList.remove('has-animation');
     }
