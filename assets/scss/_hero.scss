@@ -1,0 +1,57 @@
+// Hero section
+.hero {
+  padding: 130px 0 100px;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  .content {
+    padding-top: 120px;
+    color: #fff;
+    h1,
+    p,
+    .download-app-btns a {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      line-height: 60px;
+      animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      max-width: 70%;
+      animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+      animation-delay: 0.4s;
+    }
+    .download-app-btns a {
+      animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+      animation-delay: 1s;
+    }
+  }
+  .phone-img {
+    filter: drop-shadow(17px 15px 11px rgba(0, 0, 0, 0.18));
+    height: 100%;
+    animation: movePhoneImg 3.6s ease-out infinite;
+  }
+}
+@keyframes movePhoneImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIpUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

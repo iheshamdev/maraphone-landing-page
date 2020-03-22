@@ -140,7 +140,7 @@
 }
 .what-is-maraphone .card .title {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 12px;
 }
 .what-is-maraphone .card p {
@@ -164,16 +164,10 @@
   padding-bottom: 60px;
 }
 .FAQs.animated h5 {
-  transform: translateY(60px);
-  opacity: 0;
   animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
   animation-delay: 0.3s;
 }
 .FAQs.animated h2 {
-  font-size: 60px;
-  margin-bottom: 60px;
-  transform: translateY(60px);
-  opacity: 0;
   animation: fadeIpUp 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
 }
 .FAQs.animated ul li {
@@ -267,156 +261,6 @@
     opacity: 1;
   }
 }
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  font-family: "STCForward", sans-serif, arial;
-}
-
-body {
-  background-color: #f7f7fa;
-  color: #1d252d;
-}
-
-body.ar {
-  direction: rtl;
-}
-
-body.ar .FAQs ul li .question .arrow-icon {
-  transform: rotate(90deg);
-}
-
-p {
-  line-height: 30px;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-h5 {
-  font-size: 19px;
-  font-weight: normal;
-  color: #8e9aa0;
-  margin-bottom: 8px;
-}
-
-.flex {
-  display: flex;
-}
-.flex.wrap {
-  flex-wrap: wrap;
-}
-.flex.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-.flex.align-center {
-  align-items: center;
-}
-.flex.justify-between {
-  justify-content: space-between;
-}
-
-.main-container {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  padding: 30px 40px;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  direction: ltr;
-}
-header .lang-switcher {
-  padding: 0 30px;
-  height: 40px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  font-size: 16px;
-  color: #fff;
-  margin-right: 24px;
-  margin-top: -2px;
-}
-
-.hero {
-  padding: 130px 0 100px;
-  background-size: cover;
-  background-position: 100%;
-  background-repeat: no-repeat;
-}
-.hero .content {
-  padding-top: 120px;
-  color: #fff;
-}
-.hero .content h1 {
-  font-size: 42px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  line-height: 60px;
-}
-.hero .content p {
-  font-size: 18px;
-  margin-bottom: 40px;
-  max-width: 70%;
-}
-.hero .phone-img {
-  filter: drop-shadow(17px 15px 11px rgba(0, 0, 0, 0.18));
-  height: 100%;
-  animation: movePhoneImg 3.6s ease-out infinite;
-}
-@keyframes movePhoneImg {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.features {
-  padding: 80px 40px 40px;
-}
-.features .feature {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 0;
-}
-.features .feature.reverse {
-  flex-direction: row-reverse;
-}
-.features .feature .content {
-  width: 50%;
-  padding: 24px 30px 0;
-}
-.features .feature .content .title {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 50px;
-  margin-bottom: 24px;
-}
-.features .feature img {
-  max-width: 50%;
-  padding: 0 20px;
-}
-
-.stc-footer-component > * {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto !important;
-}
-
 @media screen and (max-width: 1070px) {
   .hero .phone-img {
     width: 340px;
@@ -551,6 +395,174 @@ header .lang-switcher {
   .download-app-btns a img {
     width: 100%;
   }
+}
+.hero {
+  padding: 130px 0 100px;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+.hero .content {
+  padding-top: 120px;
+  color: #fff;
+}
+.hero .content h1,
+.hero .content p,
+.hero .content .download-app-btns a {
+  transform: translateY(40px);
+  opacity: 0;
+}
+.hero .content h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 60px;
+  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+.hero .content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 70%;
+  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+  animation-delay: 0.4s;
+}
+.hero .content .download-app-btns a {
+  animation: fadeIpUp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+  animation-delay: 1s;
+}
+.hero .phone-img {
+  filter: drop-shadow(17px 15px 11px rgba(0, 0, 0, 0.18));
+  height: 100%;
+  animation: movePhoneImg 3.6s ease-out infinite;
+}
+
+@keyframes movePhoneImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIpUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-family: "STCForward", sans-serif, arial;
+}
+
+body {
+  background-color: #f7f7fa;
+  color: #1d252d;
+}
+
+body.ar {
+  direction: rtl;
+}
+
+body.ar .FAQs ul li .question .arrow-icon {
+  transform: rotate(90deg);
+}
+
+p {
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h5 {
+  font-size: 19px;
+  font-weight: normal;
+  color: #8e9aa0;
+  margin-bottom: 8px;
+}
+
+.flex {
+  display: flex;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+.flex.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.justify-between {
+  justify-content: space-between;
+}
+
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 30px 40px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  direction: ltr;
+}
+header .lang-switcher {
+  padding: 0 30px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 24px;
+  margin-top: -2px;
+}
+
+.features {
+  padding: 80px 40px 40px;
+}
+.features .feature {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.features .feature.reverse {
+  flex-direction: row-reverse;
+}
+.features .feature .content {
+  width: 50%;
+  padding: 24px 30px 0;
+}
+.features .feature .content .title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 24px;
+}
+.features .feature img {
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+.stc-footer-component > * {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto !important;
 }
 
 /*# sourceMappingURL=style.css.map */

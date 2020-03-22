@@ -1,0 +1,140 @@
+// Break points > RESPONSIVE
+@media screen and (max-width: 1070px) {
+  .hero .phone-img {
+    width: 340px;
+  }
+  .main-container {
+    padding: 30px;
+  }
+  .what-is-maraphone {
+    padding: 40px 30px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .hero {
+    padding: 130px 0;
+    .phone-img {
+      width: 270px;
+    }
+  }
+  .what-is-maraphone {
+    margin-top: -150px;
+  }
+}
+// Ipad
+@media screen and (max-width: 800px) {
+  h5 {
+    font-size: 17px;
+  }
+  .hero {
+    padding-top: 70px;
+    .main-container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .content {
+      padding-top: 20px;
+      text-align: center;
+      h1 {
+        font-size: 36px;
+        line-height: 48px;
+      }
+      p {
+        margin: 0 auto 30px;
+      }
+    }
+    .phone-img {
+      width: 240px;
+    }
+  }
+  .what-is-maraphone {
+    h2 {
+      margin-bottom: 0;
+      font-size: 24px;
+    }
+    .flex.justify-between {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0 !important;
+      .card {
+        padding-top: 40px;
+        width: 100%;
+        .title {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+  .features {
+    .feature {
+      flex-direction: column !important;
+      align-items: center;
+      .content {
+        width: 100%;
+        text-align: center;
+        .title {
+          margin-bottom: 14px;
+        }
+      }
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+// Mobile
+@media screen and (max-width: 500px) {
+  .main-container {
+    padding: 20px;
+  }
+  .hero {
+    .content {
+      h1 {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 20px;
+      }
+      p {
+        max-width: 100%;
+        font-size: 17px;
+        color: #f3efef;
+      }
+    }
+  }
+  .what-is-maraphone {
+    margin-top: -110px;
+  }
+  .features {
+    .feature {
+      flex-direction: column !important;
+      align-items: center;
+      .content {
+        width: 100%;
+        text-align: center;
+        padding: 20px 10px 0;
+        .title {
+          margin-bottom: 14px;
+        }
+      }
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .download-app-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      width: 48%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
