@@ -88,6 +88,83 @@
   src: url("/assets/fonts/STCForward/STCForward-ExtraBoldItalic.eot");
   src: url("/assets/fonts/STCForward/STCForward-ExtraBoldItalic.woff") format("woff"), url("/assets/fonts/STCForward/STCForward-ExtraBoldItalic.ttf") format("truetype"), url("/assets/fonts/STCForward/STCForward-ExtraBoldItalic.svg") format("svg");
 }
+.what-is-maraphone {
+  padding: 60px;
+  background-color: #ffffff;
+  box-shadow: 0px 14px 26px rgba(0, 0, 0, 0.08);
+  margin-top: -110px;
+  border-radius: 20px;
+  transform: scale(0.8);
+  opacity: 0;
+}
+.what-is-maraphone.animated {
+  animation: zoomIn 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+.what-is-maraphone.animated h5 {
+  animation: showTitleAndSubTitle 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 1.5s;
+}
+.what-is-maraphone.animated h2 {
+  animation: showTitleAndSubTitle 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 1s;
+}
+.what-is-maraphone.animated .card {
+  animation: scaleOutCard 0.9s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+.what-is-maraphone h5 {
+  transform: translateX(40px);
+  opacity: 0;
+}
+.what-is-maraphone h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  transform: translateX(40px);
+  opacity: 0;
+}
+.what-is-maraphone .card {
+  width: 48%;
+  color: #1d252d;
+  transform: scale(1.2);
+  opacity: 0;
+}
+.what-is-maraphone .card:first-of-type {
+  animation-delay: 1.8s;
+}
+.what-is-maraphone .card:last-of-type {
+  animation-delay: 2s;
+}
+.what-is-maraphone .card img {
+  margin: 20px;
+  margin-top: 0;
+}
+.what-is-maraphone .card .title {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.what-is-maraphone .card p {
+  line-height: 30px;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes showTitleAndSubTitle {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes scaleOutCard {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -206,35 +283,6 @@ header .lang-switcher {
   }
 }
 
-.what-is-maraphone {
-  padding: 60px;
-  background-color: #ffffff;
-  box-shadow: 0px 14px 26px rgba(0, 0, 0, 0.08);
-  margin-top: -110px;
-  border-radius: 20px;
-}
-.what-is-maraphone h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  font-weight: 500;
-}
-.what-is-maraphone .card {
-  width: 48%;
-  color: #1d252d;
-}
-.what-is-maraphone .card img {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-.what-is-maraphone .card .title {
-  font-size: 21px;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-.what-is-maraphone .card p {
-  line-height: 30px;
-}
-
 .features {
   padding: 80px 40px 40px;
 }
@@ -251,7 +299,7 @@ header .lang-switcher {
   padding: 24px 30px 0;
 }
 .features .feature .content .title {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 50px;
   margin-bottom: 24px;
@@ -466,7 +514,7 @@ header .lang-switcher {
     max-width: 70%;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
   .download-app-btns {
     display: flex;
     justify-content: space-between;

@@ -128,3 +128,18 @@ render();
 function toggleExpandingPanels(e) {
   e.target.closest('li').classList.toggle('expand');
 }
+
+// Animations
+const animatedElements = document.querySelectorAll('.has-animation');
+document.addEventListener('scroll', fireAnimations);
+
+function fireAnimations() {
+  animatedElements.forEach(el => {
+    if (el.offsetTop + 150 < window.scrollY + window.innerHeight) {
+      console.log(el);
+      el.classList.add('animated');
+      el.classList.remove('has-animation');
+    }
+  });
+}
+fireAnimations();
