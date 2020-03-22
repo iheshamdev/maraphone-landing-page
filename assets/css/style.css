@@ -229,16 +229,16 @@
   flex-direction: row-reverse;
 }
 .features .feature.animated h5 {
-  animation: showTitleAndSubTitle 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-  animation-delay: 0.4s;
+  animation: showTitleAndSubTitle 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.1s;
 }
 .features .feature.animated .title {
-  animation: showTitleAndSubTitle 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-  animation-delay: 0.2s;
+  animation: showTitleAndSubTitle 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.3s;
 }
 .features .feature.animated p {
-  animation: fadeInUp 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-  animation-delay: 0.5s;
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.8s;
 }
 .features .feature .content {
   width: 50%;
@@ -246,7 +246,7 @@
 }
 .features .feature .content h5,
 .features .feature .content .title {
-  transform: translateX(40px);
+  transform: translateX(60px);
   opacity: 0;
 }
 .features .feature .content .title {
