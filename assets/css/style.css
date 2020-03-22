@@ -202,7 +202,7 @@
 body.en .features .feature .content h5,
 body.en .features .feature .content p,
 body.en .features .feature .content .title {
-  transform: translateX(60px);
+  transform: translateX(-60px);
 }
 
 .FAQs {
