@@ -1,11 +1,9 @@
 // Hero section
 .hero {
   padding: 130px 0 100px;
-  background-size: cover;
-  background-position: 100%;
-  background-repeat: no-repeat;
+  background-color: #4f008c;
   .content {
-    padding-top: 120px;
+    padding: 40px;
     color: #fff;
     h1 {
       font-size: 42px;
@@ -22,17 +20,5 @@
   .phone-img {
     filter: drop-shadow(17px 15px 11px rgba(0, 0, 0, 0.18));
     height: 100%;
-    animation: movePhoneImg 3.6s ease-out infinite;
-  }
-}
-@keyframes movePhoneImg {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
