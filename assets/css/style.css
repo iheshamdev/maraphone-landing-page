@@ -218,7 +218,7 @@ header .lang-switcher {
 .what-is-maraphone h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .what-is-maraphone .card {
   width: 48%;
@@ -230,7 +230,7 @@ header .lang-switcher {
 }
 .what-is-maraphone .card .title {
   font-size: 21px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 12px;
 }
 .what-is-maraphone .card p {
