@@ -45,7 +45,7 @@ const FAQs = {
     {
       question: 'How do you calculate my goal?',
       answer:
-        'We calculate your AWD (average weekly distance) for the last 28 days and add to it the goal percentage as per the below table.',
+        'We calculate your AWD (average weekly distance) for the last 30 days and add to it the goal percentage as per the below table.',
     },
     {
       question: 'Do I have to give permissions on the app?',
@@ -93,7 +93,7 @@ const FAQs = {
     {
       question: 'كيف تحسبون هدفي الاسبوعي؟',
       answer:
-        'نحسب متوسط المسافة الأسبوعية اللي قطعتها عن آخر 28 يوم، ونضيف لها نسبة الهدف وفقًا للجدول أدناه.',
+        'نحسب متوسط المسافة الأسبوعية اللي قطعتها عن آخر 30 يوم، ونضيف لها نسبة الهدف وفقًا للجدول أدناه.',
     },
     {
       question: 'هل يجب أن أعطي صلاحيات على التطبيق؟',
